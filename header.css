@@ -1,0 +1,312 @@
+.header {
+     position: fixed;
+     display: flex;
+     flex-direction: row;
+     height: 55px;
+     border-bottom: 1px;
+     border-bottom-color: gray;
+     border-bottom-style: solid;
+     border-bottom-width: 0.5px;
+     justify-content: space-between;
+     width: 100%;
+     align-items: center;   
+     background-color: white;
+     z-index: 200;
+     top: 0;
+     left: 0;
+     flex-shrink: 0;
+     
+   
+}
+@media (max-width: 600px) {
+
+  .left {
+    width: auto;
+  }
+
+  .middle {
+    width: 100%;
+    margin: 0 10px;
+  }
+
+  .placeholder {
+    height: 32px;
+    font-size: 14px;
+  }
+
+  .search-div {
+    width: 50px;
+    height: 32px;
+  }
+
+  .mic-div {
+    display: none; /* Hide mic icon for small screens */
+  }
+
+  .right {
+    width: auto;
+    gap: 15px;
+  }
+
+  .Ahmad {
+    height: 28px;
+    width: 28px;
+    margin-right: 10px;
+  }
+}
+
+
+
+.left {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 150px;
+}
+.youtubeImg {
+     height: 20px;
+     cursor: pointer;
+}
+.lines {
+     height: 23px;
+     margin-right: 24px;
+     margin-left: 24px;
+     cursor: pointer;
+}
+
+
+
+
+.middle {
+     display: flex;
+     align-items: center;
+     width: 470px;
+     justify-content: center;
+     margin-right: 30px;
+     margin-left: 70px;
+}
+.placeholder {
+     display: flex;
+     height: 40px;
+     border-style: solid;
+     border-width: 0.5px;
+     border-right-width: 0px;
+     padding-left: 10px;
+     font-size: 16px;
+     font-weight: 100;
+     flex: 1;
+     width: 0;
+     
+     
+}
+.search-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 72px;
+  height: 39px;
+  background-color: rgba(128, 128, 128, 0.074);
+  border-style: solid;
+  border-width: 0.5px;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.15s;
+}
+.searchIcon {
+     height: 25px;
+}
+.search-div:hover {
+     background-color:  rgba(128, 128, 128, 0.184);
+}
+.search-div:hover .searchAppear {
+     opacity: 1;
+     
+}
+.searchAppear {
+     position: absolute;
+     bottom: -50px;
+     background-color: rgba(96, 96, 96, 0.9);
+     color: white;
+     font-size: 15px;
+     width: 54px;
+     text-align: center;
+     font-family: arial;
+     border-radius: 2px;
+     font-size: 12px;
+     padding-top: 8px;
+     padding-bottom: 8px;
+     opacity: 0;
+     pointer-events: none;
+     transition:  opacity 0.15s;
+}
+
+.mic-div {
+  display: flex;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  align-items: center;
+  background-color: rgba(128, 128, 128, 0.1);
+  margin-left: 10px;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.15s;
+}
+.mic-div:hover .voiceAppear {
+     opacity: 1;
+}
+.voiceAppear {
+   position: absolute;
+     bottom: -50px;
+     background-color: rgba(96, 96, 96, 0.9);
+     color: white;
+     font-size: 15px;
+     padding-right: 10px;
+     padding-left: 10px;
+     text-align: center;
+     font-family: arial;
+     border-radius: 2px;
+     font-size: 12px;
+     padding-top: 8px;
+     padding-bottom: 8px;
+     opacity: 0;
+     pointer-events: none;
+     white-space: nowrap;  
+     transition: opacity 0.15s;
+}
+.micIcon {
+     height: 25px;
+}
+
+
+
+
+.right {
+     display: flex;
+     width: 200px;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     gap: 30px;
+}
+.camera-div {
+     position: relative;
+     padding-top: 6px; 
+     transition: background-color 0.15s;  
+}
+.camera-div:hover .createAppear {
+     opacity: 1;
+}
+.createAppear {
+  position: absolute;
+     bottom: -50px;
+     left: -15px;
+     background-color: rgba(96, 96, 96, 0.9);
+     color: white;
+     font-size: 15px;
+     padding-right: 10px;
+     padding-left: 10px;
+     text-align: center;
+     font-family: arial;
+     border-radius: 2px;
+     font-size: 12px;
+     padding-top: 8px;
+     padding-bottom: 8px;
+     opacity: 0;
+     pointer-events: none;
+     white-space: nowrap;
+     transition: opacity 0.15s;    
+}
+.cameraIcon {
+     height: 23px;
+     cursor: pointer;
+}
+.dots-div {
+     position: relative;
+     padding-top: 6px;
+     transition: background-color 0.15s;
+}
+.dots-div:hover .youtubeAppear {
+     opacity: 1;
+}
+.youtubeAppear {
+     position: absolute;
+     bottom: -50px;
+     left: -33px;
+     background-color: rgba(96, 96, 96, 0.9);
+     color: white;
+     font-size: 15px;
+     padding-right: 10px;
+     padding-left: 10px;
+     text-align: center;
+     font-family: arial;
+     border-radius: 2px;
+     font-size: 12px;
+     padding-top: 8px;
+     padding-bottom: 8px;
+     opacity: 0;
+     pointer-events: none;
+     white-space: nowrap; 
+     transition: opacity 0.15s;
+}
+.dotsIcon {
+     height: 23px;
+     cursor: pointer;
+}
+
+.bell-div {
+     position: relative;
+     align-items: center;
+     padding-top: 6px;
+     cursor: pointer;
+     transition: background-color 0.15s;
+}
+.bell-div:hover .notificationsAppear {
+     opacity: 1;
+} 
+.notificationsAppear {
+     position: absolute;
+    bottom: -50px;
+     left: -33px;
+     background-color: rgba(96, 96, 96, 0.9);
+     color: white;
+     font-size: 15px;
+     padding-right: 10px;
+     padding-left: 10px;
+     text-align: center;
+     font-family: arial;
+     border-radius: 2px;
+     font-size: 12px;
+     padding-top: 8px;
+     padding-bottom: 8px;
+     opacity: 0;
+     pointer-events: none;
+     white-space: nowrap; 
+     transition: opacity 0.15s;  
+}
+.bellIcon {
+     height: 23px;
+}
+.Ahmad {
+     height: 33px;
+     width: 33px;
+     border-radius: 20px;
+     object-fit: cover;
+     margin-right: 20px; 
+     cursor: pointer;   
+}
+.span-bell {
+     position: absolute;
+     left: 13px;
+     bottom: 12px;
+     background-color: rgb(204, 0, 0);
+     color: white;
+     width: 16px;
+     text-align: center;
+     border-radius: 80px;
+     height: 14px;
+     font-size: 10px;
+     font-family: arial;
+     padding-top: 2.5px;
+}

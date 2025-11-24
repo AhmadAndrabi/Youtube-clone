@@ -1,0 +1,151 @@
+
+.sidebar {
+     display: flex;
+     flex-direction: column;
+     width: 73px;
+     position: fixed;
+     align-items: center;
+     height: 100%;
+     background-color: white;
+     left: 0px;
+     top: 55px;
+     z-index: 200;
+  
+     
+     
+}
+@media (max-width: 700px) {
+  .sidebar {
+    flex-direction: row;
+    width: 100%;
+    height: 60px;
+    bottom: 0;
+    top: auto;
+    justify-content: space-between;
+    border-top: 1px solid rgba(0,0,0,0.1);
+  }
+
+  .sidebar > div {
+    height: 100%;
+    justify-content: center;
+    font-size: 8px;
+  }
+
+  .homeIcon,
+  .exploreIcon,
+  .subscriptionsIcon,
+  .sastaYoutubeIcon,
+  .youtubeMusicIcon,
+  .libraryIcon {
+    height: 20px;
+    width: 20px;
+  }
+}
+.home-div {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 5px;
+     font-size: 10px;
+     height: 72px;
+     justify-content: center;
+     width: 100%;
+     cursor: pointer;
+}
+.home-div:hover {
+      background-color: rgba(0, 0, 0, 0.066);
+}
+.homeIcon {
+     height: 23px;
+     width: 23px;
+}
+.explore-div {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 7px;
+     font-size: 10px;
+     height: 72px;
+     justify-content: center;
+     width: 100%;
+     cursor: pointer;
+}
+.explore-div:hover {
+     background-color: rgba(0, 0, 0, 0.066);
+}
+.exploreIcon {
+     height: 23px;
+     width: 23px;
+}
+.subscriptions-div {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 7px;
+     font-size: 10px;
+     height: 72px;
+     justify-content: center;
+     width: 100%;
+     cursor: pointer;
+}
+.subscriptions-div:hover {
+      background-color: rgba(0, 0, 0, 0.066);
+}
+.subscriptionsIcon {
+     height: 23px;
+     width: 23px;
+}
+.sastaYoutube-div {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 5px;
+     font-size: 10px;
+     height: 72px;
+     justify-content: center;
+     width: 100%;
+     cursor: pointer;
+}
+.sastaYoutube-div:hover {
+ background-color: rgba(0, 0, 0, 0.066);
+}
+.sastaYoutubeIcon {
+     height: 23px;
+     width: 23px;
+}
+.youtubeMusic-div {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 5px;
+     font-size: 10px;
+     height: 72px;
+     justify-content: center;
+     width: 100%;
+     cursor: pointer;
+}
+.youtubeMusic-div:hover {
+      background-color: rgba(0, 0, 0, 0.066);
+}
+.youtubeMusicIcon {
+     height: 23px;
+     width: 23px;
+}
+.library-div {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 5px;
+     font-size: 10px;
+     height: 74px;
+     justify-content: center;
+     width: 100%;
+     cursor: pointer;
+}
+.library-div:hover {
+     background-color: rgba(0, 0, 0, 0.066);
+}
+.libraryIcon {
+     height: 23px;
+     width: 23px;
+}
